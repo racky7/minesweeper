@@ -61,7 +61,9 @@ export default function Minesweeper({
                 onClick={() => {
                   onCellClick(rowIndex, colIndex, cell);
                 }}
-                className="cell"
+                className={`cell ${cell.revealed ? "revealed" : ""} ${
+                  cell.revealed && cell.value === "X" ? "mine" : ""
+                }`.trim()}
               >
                 {cell.revealed ? <span>{cell.value}</span> : ""}
               </div>

@@ -60,6 +60,15 @@
   user-select: none;
 }
 
+.revealed {
+  background-color: #eaeaea;
+  pointer-events: none;
+}
+
+.mine {
+  background-color: #ecd9d9;
+}
+
 .cell:hover {
   background-color: #f9fafb;
 }
